@@ -1,11 +1,97 @@
-<header>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coruja Grifs</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <h1>Coruja Grifs</h1>
-  <p>Arte, estilo e identidade visual</p>
-</header>
-<div class="lojista-btn">
-  <a href="https://codepen.io/corujagrifs/pen/GgqNMLz" target="_blank">
-    SEJA REVENDEDOR CNPJ
-  </a>
-</div>
+  <script src="script.js" defer></script>
+  <style>
+    /* Adaptação do CSS para fotos */
+    body {
+      margin: 0;
+      font-family: system-ui;
+      background: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px 20px;
+    }
+
+    .lojista-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .lojista-btn a {
+      background: #d4af37;
+      color: black;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: 0.3s;
+    }
+
+    .lojista-btn a:hover {
+      background: black;
+      color: #d4af37;
+    }
+
+    /* Grid de fotos conceituais */
+    .photo-gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 20px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .photo-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .photo-gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Coruja Grifs</h1>
+    <p>Arte, estilo e identidade visual</p>
+  </header>
+
+  <div class="photo-gallery">
+    <img src="https://raw.githubusercontent.com/corujagrifs-tech/vitrine/main/FOTOCONCEITOVERTICAL%2001.jpeg" alt="Foto Conceitual 1">
+    <img src="https://raw.githubusercontent.com/corujagrifs-tech/vitrine/main/FCV02.jpeg" alt="Foto Conceitual 2">
+    <img src="https://raw.githubusercontent.com/corujagrifs-tech/vitrine/main/FC03.jpeg" alt="Foto Conceitual 3">
+    <img src="https://raw.githubusercontent.com/corujagrifs-tech/vitrine/main/FCV04.jpeg" alt="Foto Conceitual 4">
+    <img src="https://raw.githubusercontent.com/corujagrifs-tech/vitrine/main/FCV5.jpeg" alt="Foto Conceitual 5">
+  </div>
+
+  <div class="lojista-btn">
+    <a href="https://codepen.io/corujagrifs/pen/GgqNMLz" target="_blank">
+      SEJA REVENDEDOR CNPJ
+    </a>
+  </div>
+
+  <button>Clique aqui</button>
+
+</body>
+</html>
